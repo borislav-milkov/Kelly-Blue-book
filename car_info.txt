@@ -1,0 +1,19 @@
+Ford Wagon ZTW
+5000
+3
+Color
+5
+Fort Knox Gold Clearcoat Metallic, 5.0
+Liquid Grey Clearcoat Metallic, 7.0
+Infra-Red Clearcoat, 1.0
+Grabber Green Clearcoat Metallic, 0.0
+Sangria Red Clearcoat Metallic, 10.0
+Brakes
+3
+Standard, 50.0
+ABS, 400
+ABS+Adv.Trac, 1625
+Transmission
+2
+Automatic, 0.0
+Standard, -815
