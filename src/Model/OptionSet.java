@@ -45,8 +45,25 @@ class OptionSet implements Serializable{
 		return opt.get(index);
 	}
 	
+	protected Option getOption(String optionName) {
+		for(int i=0; i<opt.size(); i++) {
+			if(opt.get(i).getName().equals(optionName)) {
+				return opt.get(i);
+			}
+		}
+		return null;
+	}
+	
 	protected int getSize() {
 		return opt.size();
+	}
+	
+	protected void deleteOption(String optionName) {
+		for(Option option : opt) {
+			if(option.getName().equals(optionName)) {
+				opt.remove(option);
+			}
+		}
 	}
 	
 	public String toString() {

@@ -1,3 +1,5 @@
 package Adapter;
-public class BuildAuto extends ProxyAutomobile implements CreateAuto, UpdateAuto, FixAuto{
+import Scale.Scalable;;
+public class BuildAuto extends ProxyAutomobile implements CreateAuto, UpdateAuto, FixAuto, Scalable{
+
 }

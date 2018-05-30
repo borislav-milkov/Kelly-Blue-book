@@ -2,6 +2,7 @@ package Driver;
 import Util.FileIO;
 import Adapter.*;
 import Exception.AutoException;
+import Scale.Scalable;
 
 
 public class Driver {
@@ -12,14 +13,19 @@ public class Driver {
 			FileIO f = new FileIO();
 			String filename = f.readUserInput();
 			car.BuildAuto(filename);
-		
+			
 			car.printAuto("Ford Wagon ZTW");
 			
-			UpdateAuto a3 = new BuildAuto();
-			a3.updateOptionSetName("Ford Wagon ZTW", "Brakes", "New Brakes");
-			car.printAuto("Ford Wagon ZTW");
+			Scalable scaleable = new BuildAuto();
 		
-		
+			String input[] = {"1", "1", "Ford Wagon ZTW", "Color", "Fort Knox Gold Clearcoat Metallic", "BlueCoastalGoldHawaii", "0"};
+			String input2[] = {"1", "2", "Ford Wagon ZTW", "Color", "Fort Knox Gold Clearcoat Metallic", "BlueCoastalGoldCalifornia", "1000"};
+			
+			//calling threads with synchronization
+			scaleable.operation(input);
+			scaleable.operation(input2);
+			
+			
 	}
 
 }
