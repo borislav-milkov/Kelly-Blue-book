@@ -1,8 +1,8 @@
-package Exception;
+package exception;
 
-import Adapter.*;
-import Model.Automobile;
-import Util.FileIO;
+import adapter.*;
+import model.Automobile;
+import util.FileIO;
 
 class Fix1to100 {
 	
@@ -11,7 +11,7 @@ class Fix1to100 {
 		try {
 			System.out.println("Loading default file car_info.txt");
 			FileIO f = new FileIO();
-			Automobile a1 = f.buildAutoObject("car_info.txt");
+			Automobile a1 = f.buildAutoObject("car_info.txt", "Text");
 			CreateAuto car = new BuildAuto();
 			car.setAuto(a1.getName() ,a1);
 		} catch (AutoException e) {

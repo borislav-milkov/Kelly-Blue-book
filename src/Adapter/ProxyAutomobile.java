@@ -1,10 +1,12 @@
-package Adapter;
+package adapter;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.Set;
 
-import Exception.AutoException;
-import Model.*;
-import Scale.*;
-import Util.FileIO;
+import exception.AutoException;
+import model.*;
+import scale.*;
+import util.FileIO;
 
 
 public abstract class ProxyAutomobile {
@@ -36,13 +38,36 @@ public abstract class ProxyAutomobile {
 		autos.put(autoName, auto);
 	}
 
-	public void BuildAuto(String filename){
+	public void BuildAuto(String filename, String fileType){
 		FileIO f = new FileIO();
 		try {
-			Automobile a1 = f.buildAutoObject(filename);
+			Automobile a1 = f.buildAutoObject(filename, fileType);
 			autos.put(a1.getName(), a1);
 		} catch (AutoException e) {
 			e.fix(e.getErrNum());
+		}
+		
+	}
+	
+	public void setOptionChoice(String autoName, String setName, String optionName) {
+		autos.get(autoName).setOptionChoice(setName, optionName);
+	}
+	
+	public static ArrayList<String> getModels(){
+		ArrayList<String> list = new ArrayList<String>();
+		for(String autoName : autos.keySet()) {
+			list.add(autoName);
+		}
+		return list;
+	}
+	
+	public static Automobile getAuto(String autoName) {
+		return autos.get(autoName);
+	}
+	
+	public void addToLHM(Automobile[] cars) {
+		for(Automobile car : cars) {
+			autos.put(car.getName(), car);
 		}
 	}
 

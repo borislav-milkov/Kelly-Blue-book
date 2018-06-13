@@ -1,8 +1,8 @@
-package Driver;
-import Util.FileIO;
-import Adapter.*;
-import Exception.AutoException;
-import Scale.Scalable;
+package driver;
+import adapter.*;
+import exception.AutoException;
+import scale.Scalable;
+import util.FileIO;
 
 
 public class Driver {
@@ -12,7 +12,7 @@ public class Driver {
 		CreateAuto car = new BuildAuto();
 			FileIO f = new FileIO();
 			String filename = f.readUserInput();
-			car.BuildAuto(filename);
+			car.BuildAuto(filename, "Text");
 			
 			car.printAuto("Ford Wagon ZTW");
 			

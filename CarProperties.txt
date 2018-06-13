@@ -1,0 +1,33 @@
+NumAutos=2
+
+CarName1=FordWagonZTW
+BasePrice1=5000
+NumOptionSets1=2
+OptionSetSize_1_1=2
+OptionSet_1_1=Color
+Option_1_1_1=Blue
+OptionPrice_1_1_1=10
+Option_1_1_2=Red
+OptionPrice_1_1_2=20
+OptionSetSize_1_2=2
+OptionSet_1_2=Transmission
+Option_1_2_1=Automoatic
+OptionPrice_1_2_1=300
+Option_1_2_2=Manual
+OptionPrice_1_2_2=-200
+
+CarName2=ToyotaCamry
+BasePrice2=7000
+NumOptionSets2=2
+OptionSetSize_2_1=2
+OptionSet_2_1=Color
+Option_2_1_1=Sunset Red
+OptionPrice_2_1_1=50
+Option_2_1_2=Grass Green
+OptionPrice_2_1_2=15
+OptionSetSize_2_2=2
+OptionSet_2_2=Transmission
+Option_2_2_1=Automoatic
+OptionPrice_2_2_1=300
+Option_2_2_2=Manual
+OptionPrice_2_2_2=-200

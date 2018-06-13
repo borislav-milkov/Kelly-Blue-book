@@ -1,6 +1,6 @@
-package Scale;
+package scale;
 
-import Adapter.ProxyAutomobile;
+import adapter.ProxyAutomobile;
 
 public class EditOptions extends ProxyAutomobile implements Runnable{
 	

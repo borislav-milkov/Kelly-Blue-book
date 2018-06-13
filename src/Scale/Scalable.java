@@ -1,4 +1,4 @@
-package Scale;
+package scale;
 
 public interface Scalable {
 	  public void operation(String [] input);

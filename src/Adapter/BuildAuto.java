@@ -1,5 +1,6 @@
-package Adapter;
-import Scale.Scalable;;
-public class BuildAuto extends ProxyAutomobile implements CreateAuto, UpdateAuto, FixAuto, Scalable{
+package adapter;
+import scale.Scalable;
+import server.AutoServer;;
+public class BuildAuto extends ProxyAutomobile implements CreateAuto, UpdateAuto, FixAuto, Scalable, AutoServer{
 
 }
